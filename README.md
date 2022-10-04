@@ -173,7 +173,7 @@ Additionally, open the `twe-svg.zip` file and try to emulate the filename format
 
 <br>
 
-If you feel that there are no further issues with how your SVG files are structured and named, perform the following: 
+If you feel that there are no further issues with how your SVG files are structured and named: 
 1. Create an `SVG` folder.
 1. Place all the SVG files inside this `SVG` folder.
 1. Compress that folder to a ZIP file. 
@@ -184,7 +184,7 @@ If you feel that there are no further issues with how your SVG files are structu
 
 ### Run the code
 
-Once everything is ready, start building your custom color-emoji font by typing:
+Once everything is ready, open a command prompt, navigate to the location of the Twemoji working directory, and start building your custom color-emoji font by typing:
 
     make
 
