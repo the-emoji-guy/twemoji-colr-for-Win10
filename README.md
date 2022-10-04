@@ -111,7 +111,7 @@ Update the `packages.json` to address version conflicts:
 
 <br>
 
-## Run the code
+## Test the code
 
 I would recommend running the commands first on the provided files to test if the environment is working properly. The `Twemoji` working directory should contain a file called `twe-svg.zip` which we can use for our first test.
 
@@ -182,9 +182,9 @@ If you feel that there are no further issues with how your SVG files are structu
 
 <br>
 
-### Run the code
+## Create your font
 
-Once everything is ready, open a command prompt, navigate to the location of the Twemoji working directory, and start building your custom color-emoji font by typing:
+Once everything is ready, open a command prompt, navigate to the working directory, and start building your custom color-emoji font by typing:
 
     make
 
