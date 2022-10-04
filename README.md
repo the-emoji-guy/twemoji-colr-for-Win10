@@ -75,6 +75,9 @@ Install `fonttools` as a `fontforge` module:
 <br>
 
 ## Update files to run on Windows
+I've already updated the relevant files, but in case you're coming in from another fork:
+
+<br>
 
 Create a working directory:
 1. Download this `twemoji` repository as a ZIP file.
