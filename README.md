@@ -145,14 +145,19 @@ Once verified that there are no issues running `make`, we can start customizing 
 
 <br>
 
+### Fixing issues with SVG files
+Most errors occur when the `make` command encounters an SVG file that it cannot process. The command expects SVG files that come with a highly simplified 'layered' structure, as opposed to the 'nested' form normally associated with standard SVG files. I suggest looking at how the Twemoji SVGs are coded, and compare them to your standard SVG file.
+
+<br>
+
 If custom SVG files will be used, check first if the SVG files are in a compatible format:
 * should not contain nested tags
-* only include features supported by the COLRv0 spec
+* only include features supported by the `COLRv0` spec
 * no `url(###)` attributes used for fill or color 
 
 <br>
 
-Most errors occur when the `make` command encounters an SVG file that it cannot processed. If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is not a guarantee that the `make` command will process them correctly.
+If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is still not a guarantee that the `make` command will process them correctly.
 
 <br>
 
