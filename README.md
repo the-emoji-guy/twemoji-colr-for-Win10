@@ -143,6 +143,21 @@ Once verified that there are no issues running `make`, we can start customizing 
 1. Blank out the `ligatures.json` file inside the `extras` folder. The JSON file should only contain: `[]`.
 1. Update all fontnames mentioned inside the `Makefile` and `gruntfile.js` files in the base directory. Avoid using spaces in the fontname. If spaces are required, they need to be escaped with a slash ( `/` ) in the `Makefile` code.
 
+<br>
+If custom SVG files will be used, check first if the SVG files are in a compatible format:
+* should not contain nested tags
+* only include features supported by the COLRv0 spec
+* no `url(###)` attributes used for fill or color 
+
+<br>
+Most errors occur when the `make` command encounters an SVG file that it cannot processed. If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is not a guarantee that the `make` command will process them correctly.
+
+<br>
+Observe the following when naming the SVG files: 
+* preferably in lowercase, but not required
+* file names should use the unicode code point assigned for that particular glyph
+* If a glyph requires multiple codepoints, separate each codepoint with dashes ( `-` ) 
+
 
 
 <br>
