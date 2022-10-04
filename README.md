@@ -83,8 +83,8 @@ Create a working directory:
 
 <br>
 
-Update the `make` file so that it uses our freshly-installed `fontforge` module instead:
-1. Open the `make` file using you favorite text editor.
+Update the `Makefile` file so that it uses our freshly-installed `fontforge` module instead:
+1. Open the `Makefile` file using you favorite text editor.
 1. Locate the `PYTHON ?= python3` entry.
 1. Update this to `PYTHON ?= ffpython`. 
 1. Save and close the file.
@@ -110,7 +110,7 @@ Update the `packages.json` to address version conflicts:
 
 ## Run the code
 
-I would recommend running the commands first on the provided files to test if the environment is working properly. The `Twemoji` working directory should contain a file called `twe-svg.zip` which we will use as our first test.
+I would recommend running the commands first on the provided files to test if the environment is working properly. The `Twemoji` working directory should contain a file called `twe-svg.zip` which we can use for our first test.
 
 <br>
 
@@ -131,5 +131,15 @@ Finally, to build the color-emoji font, type:
 The command builds a color-emoji font from the source SVG files found in the `twe-svg.zip` file, along with any config files saved in the `extras` and `overrides` directories. 
 
 If everything was installed correctly, the output should be saved as `build/Twemoji Mozilla.ttf`.
+
+<br>
+
+## Customizing the output
+
+Once verified that there are no issues running `make`, we can start customizing the font output.
+1. Remove any SVG files in the `overrides` folder.
+2. Blank out the `ligatures.json` file inside the `extras` folder. The JSON file should only contain: `[]`.
+3. Update all fontnames mentioned inside the `Makefile` and `gruntfile.js` files in the base directory. Avoid using spaces in the fontname. If spaces are required, they need to be escaped with a slash (/) in the `Makefile` code.
+
 
 <br>
