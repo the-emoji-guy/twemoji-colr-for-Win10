@@ -145,12 +145,12 @@ Once verified that there are no issues running `make`, we can start customizing 
 
 <br>
 
-### Fixing issues with SVG files
-Most errors occur when the `make` command encounters an SVG file that it cannot process. The command expects SVG files that come with a highly simplified 'layered' structure, as opposed to the 'nested' form normally associated with standard SVG files. I suggest looking at how the Twemoji SVGs are coded, and compare them to your standard SVG file.
+### Preparing SVG files
+Most errors occur when the `make` command encounters an SVG file that it cannot process. The command expects SVG files that come with a highly simplified 'layered' structure, as opposed to the 'nested' form normally associated with standard SVG files. I suggest studying how the Twemoji SVGs are coded first, and then compare the differences to your standard SVG file.
 
 <br>
 
-If custom SVG files will be used, check first if the SVG files are in a compatible format:
+A couple of quick checks first to verify if your SVG files are in a compatible format:
 * should not contain nested tags
 * only include features supported by the `COLRv0` spec
 * no `url(###)` attributes used for fill or color 
@@ -162,10 +162,23 @@ If needed, use `picosvg` to simplify complex SVG files to a compatible format. H
 <br>
 
 Observe the following when naming the SVG files: 
-* preferably in lowercase, but not required
+* preferably in lowercase, but not required as the code has no problem processesing them in uppercase
 * file names should use the unicode code point assigned for that particular glyph
 * If a glyph requires multiple codepoints, separate each codepoint with dashes ( `-` ) 
 
+<br>
 
+Lastly, place all the SVG files in an `SVG` folder, then compress that folder to a ZIP file. Name this ZIP file `twe-svg.zip` and copy the file to your working directory, overwriting the old `twe-svg.zip` there. 
+
+
+### Run the code
+
+Once everything is ready, build the color-emoji font by typing:
+
+    make
+
+The command builds a color-emoji font from the source SVG files found in the `twe-svg.zip` file, along with any config files saved in the `extras` and `overrides` directories. 
+
+If everything was installed correctly, the output should be saved in the `build` folder as a new TTF file.
 
 <br>
