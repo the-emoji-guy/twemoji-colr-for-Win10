@@ -41,5 +41,8 @@
   },
   "resolutions": {
     "graceful-fs": "^4.2.4"
-  }
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  }  
 }
