@@ -79,7 +79,7 @@ Install `fonttools` as a `fontforge` module:
 Create a working directory:
 1. Download this `twemoji` repository as a ZIP file.
 1. Extract the contents of the ZIP file to a `<local directory>`.
-1. Note the location of the `make` and `package.json` files. 
+1. Note the location of the `Makefile` and `package.json` files. 
 
 <br>
 
@@ -136,10 +136,13 @@ If everything was installed correctly, the output should be saved as `build/Twem
 
 ## Customizing the output
 
-Once verified that there are no issues running `make`, we can start customizing the font output.
+Once verified that there are no issues running `make`, we can start customizing the font output. Set up a clean slate first:
+
+1. Delete the `build` folder generated earlier.
 1. Remove any SVG files in the `overrides` folder.
-2. Blank out the `ligatures.json` file inside the `extras` folder. The JSON file should only contain: `[]`.
-3. Update all fontnames mentioned inside the `Makefile` and `gruntfile.js` files in the base directory. Avoid using spaces in the fontname. If spaces are required, they need to be escaped with a slash (/) in the `Makefile` code.
+1. Blank out the `ligatures.json` file inside the `extras` folder. The JSON file should only contain: `[]`.
+1. Update all fontnames mentioned inside the `Makefile` and `gruntfile.js` files in the base directory. Avoid using spaces in the fontname. If spaces are required, they need to be escaped with a slash ( `/` ) in the `Makefile` code.
+
 
 
 <br>
