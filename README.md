@@ -54,7 +54,7 @@ Download and install the following:
 
 <br>
 
-Afterwards, verify that the locations of the following programs are listed as entries in the system PATH variable: 
+Afterwards, verify that the locations of the following programs are listed as entries in the system PATH variable. Check that the executables (the exe files inside the parenthesis) are accessible everywhere. 
 * fontforge (`ffpython.exe`)
 * python (`python.exe`)
 * mingw (`make.exe`)
@@ -163,7 +163,7 @@ https://github.com/googlefonts/picosvg
 
 <br>
 
-Observe the following when naming the SVG files: 
+Additionally, open the `twe-svg.zip` file and try to emulate the filename format and how the files are organized. Observe the following when naming the SVG files: 
 * preferably in lowercase, but not required as the code has no problem processesing them in uppercase
 * file names should use the unicode code point assigned for that particular glyph
 * If a glyph requires multiple codepoints, separate each codepoint with dashes ( `-` ) 
