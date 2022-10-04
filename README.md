@@ -152,12 +152,14 @@ Most errors occur when the `make` command encounters an SVG file that it cannot 
 
 A couple of quick checks first to verify if your SVG files are in a compatible format:
 * should not contain nested tags
-* only include features supported by the `COLRv0` spec
+* should only include features supported by the `COLRv0` spec
 * no `url(###)` attributes used for fill or color 
 
 <br>
 
-If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is still not a guarantee that the `make` command will process them correctly.
+If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is still not a guarantee that the `make` command will process them correctly. You can download it here:
+
+https://github.com/googlefonts/picosvg
 
 <br>
 
@@ -169,10 +171,11 @@ Observe the following when naming the SVG files:
 <br>
 
 If you feel that there are no further issues with how your SVG files are structured and named, perform the following: 
-1. Place all the SVG files in an `SVG` folder. 
+1. Create an `SVG` folder.
+1. Place all the SVG files inside this `SVG` folder.
 1. Compress that folder to a ZIP file. 
 1. Name this ZIP file `twe-svg.zip`. 
-1. Copy the file to your working directory, overwriting the old `twe-svg.zip` there. 
+1. Copy this file to your working directory, overwriting the old `twe-svg.zip` there. 
 
 <br>
 
