@@ -178,7 +178,7 @@ If you feel that there are no further issues with how your SVG files are structu
 
 ### Run the code
 
-Once everything is ready, start building the color-emoji font by typing:
+Once everything is ready, start building your custom color-emoji font by typing:
 
     make
 
