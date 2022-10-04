@@ -168,12 +168,17 @@ Observe the following when naming the SVG files:
 
 <br>
 
-Lastly, place all the SVG files in an `SVG` folder, then compress that folder to a ZIP file. Name this ZIP file `twe-svg.zip` and copy the file to your working directory, overwriting the old `twe-svg.zip` there. 
+If you feel that there are no further issues with how your SVG files are structured and named, perform the following: 
+1. Place all the SVG files in an `SVG` folder. 
+1. Compress that folder to a ZIP file. 
+1. Name this ZIP file `twe-svg.zip`. 
+1. Copy the file to your working directory, overwriting the old `twe-svg.zip` there. 
 
+<br>
 
 ### Run the code
 
-Once everything is ready, build the color-emoji font by typing:
+Once everything is ready, start building the color-emoji font by typing:
 
     make
 
@@ -182,3 +187,5 @@ The command builds a color-emoji font from the source SVG files found in the `tw
 If everything was installed correctly, the output should be saved in the `build` folder as a new TTF file.
 
 <br>
+
+👍 Done!
