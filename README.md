@@ -112,19 +112,22 @@ Update the `packages.json` to address version conflicts:
 
 I would recommend running the commands first on the provided files to test if the environment is working properly. The `Twemoji` working directory should contain a file called `twe-svg.zip` which we will use as our first test.
 
-
-Open a command prompt and navigate to the location of the `Twemoji` working directory.
-
 <br>
 
+[1]
+Open a command prompt and navigate to the location of the `Twemoji` working directory.
+
+[2]
 To install all dependencies declared in `packages.json`, including `grunt-webfont`, type:
 
     npm install
 
+[3]
 Finally, to build the color-emoji font, type:
 
     make
 
+[4]
 The command builds a color-emoji font from the source SVG files found in the `twe-svg.zip` file, along with any config files saved in the `extras` and `overrides` directories. 
 
 If everything was installed correctly, the output should be saved as `build/Twemoji Mozilla.ttf`.
