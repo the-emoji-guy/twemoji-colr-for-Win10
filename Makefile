@@ -1,7 +1,7 @@
 NPM        ?= npm
 NODE       ?= node
 PERL       ?= perl
-PYTHON     ?= python3
+PYTHON     ?= ffpython
 TTX        ?= ttx
 
 FONT_NAME  = Twemoji\ Mozilla
