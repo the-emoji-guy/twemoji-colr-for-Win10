@@ -40,7 +40,7 @@ should build the color-emoji font `build/Twemoji Mozilla.ttf` from the source SV
 
 ## Setup the environment
 
-If you plan to run the code on a vanilla Windows 10 installation, we need to do some prep work first.
+To run the code on a vanilla Windows 10 installation, set up your "build" environment first. While most linux distros come with the required software already pre-installed, Windows will need to be setup from scratch.
 
 <br>
 
@@ -57,12 +57,13 @@ Download and install the following:
 Afterwards, verify that the locations of the following programs are listed as entries in the system PATH variable: 
 * fontforge (`ffpython.exe`)
 * python (`python.exe`)
-* perl (`perl.exe`)
 * mingw (`make.exe`)
+* perl &nbsp;(`perl.exe`)
+
 
 <br>
 
-Install `fonttools` as a `font forge` module:
+Install `fonttools` as a `fontforge` module:
 1. Download the `fonttools` repository as a ZIP file from its github page.
 1. Extract the contents of the ZIP file to a local directory.
 1. Note the location of the `setup.py` file. 
@@ -109,6 +110,9 @@ Update the `packages.json` to address version conflicts:
 
 ## Run the code
 
+I would recommend running the commands first on the provided files to test if the environment is working properly. The `Twemoji` working directory should contain a file called `twe-svg.zip` which we will use as our first test.
+
+
 Open a command prompt and navigate to the location of the `Twemoji` working directory.
 
 <br>
@@ -121,6 +125,8 @@ Finally, to build the color-emoji font, type:
 
     make
 
-The command builds a color-emoji font from the source SVG files found in the `twe-svg.zip` file, along with any config files saved in the `extras` and `overrides` directories. The output is saved as `build/Twemoji Mozilla.ttf`.
+The command builds a color-emoji font from the source SVG files found in the `twe-svg.zip` file, along with any config files saved in the `extras` and `overrides` directories. 
+
+If everything was installed correctly, the output should be saved as `build/Twemoji Mozilla.ttf`.
 
 <br>
