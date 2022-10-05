@@ -166,16 +166,16 @@ If needed, use `picosvg` to simplify complex SVG files to a compatible format. H
 
 <br>
 
-Update the JSON file inside the `ligatures` folder to indicate if certain unicode combinations should just reuse existing glyphs. See an example here:
-
-* https://github.com/lgrahl/twemoji-colr/blob/master/extras/ligatures.json
-
-<br>
-
-Additionally, open the `twe-svg.zip` file and try to emulate the filename format and how the files are organized. Observe the following when naming the SVG files: 
+Open the `twe-svg.zip` file and try to emulate the filename format and how the files are organized. Observe the following when naming the SVG files: 
 * preferably in lowercase, but not required as the code has no problem processesing them in uppercase
 * each SVG file should be named after the unicode codepoint of the glyph they represent
 * If a glyph requires multiple codepoints, separate each codepoint with dashes ( `-` ) 
+
+<br>
+
+Additionally, update the JSON file inside the `ligatures` folder to indicate if certain unicode combinations should just reuse existing glyphs. See an example here:
+
+* https://github.com/lgrahl/twemoji-colr/blob/master/extras/ligatures.json
 
 <br>
 
