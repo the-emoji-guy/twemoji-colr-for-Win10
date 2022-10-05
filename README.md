@@ -80,7 +80,7 @@ This repository already has the relevant files updated, but in case you're comin
 <br>
 
 Create a working directory:
-1. Download this `twemoji` repository as a ZIP file.
+1. Download this `Twemoji-colr` repository as a ZIP file.
 1. Extract the contents of the ZIP file to a `<local directory>`.
 1. Note the location of the `Makefile` and `package.json` files. 
 
@@ -174,7 +174,7 @@ Update the JSON file inside the `ligatures` folder to indicate if certain unicod
 
 Additionally, open the `twe-svg.zip` file and try to emulate the filename format and how the files are organized. Observe the following when naming the SVG files: 
 * preferably in lowercase, but not required as the code has no problem processesing them in uppercase
-* file names should use the unicode code point assigned for that particular glyph
+* each SVG file should be named after the unicode codepoint of the glyph they represent
 * If a glyph requires multiple codepoints, separate each codepoint with dashes ( `-` ) 
 
 <br>
