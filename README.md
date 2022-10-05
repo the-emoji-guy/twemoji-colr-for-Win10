@@ -36,7 +36,7 @@ should build the color-emoji font `build/Twemoji Mozilla.ttf` from the source SV
 
 <br><br/><hr/><br/>
 
-# Running the code in Windows 10
+# How to run this code in Windows 10
 
 ## Setup the environment
 
