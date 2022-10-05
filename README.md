@@ -64,7 +64,7 @@ Afterwards, verify that the locations of the following programs are listed as en
 <br>
 
 Install `fonttools` as a `fontforge` module:
-1. Download the `fonttools` repository as a ZIP file from its github page.
+1. Download the `fonttools` repository as a ZIP file from its [github page](https://github.com/behdad/fonttools/).
 1. Extract the contents of the ZIP file to a local directory.
 1. Note the location of the `setup.py` file. 
 1. On the Start menu, locate and click the `fontforge interactive` entry.
