@@ -75,7 +75,7 @@ Install `fonttools` as a `fontforge` module:
 <br>
 
 ## Update files to run on Windows
-I've already updated the relevant files, but in case you're coming in from another fork:
+This repository already has the relevant files updated, but in case you're coming in from another fork:
 
 <br>
 
@@ -162,7 +162,13 @@ A couple of quick checks first to verify if your SVG files are in a compatible f
 
 If needed, use `picosvg` to simplify complex SVG files to a compatible format. However, this is still not a guarantee that the `make` command will process them correctly. You can download it here:
 
-https://github.com/googlefonts/picosvg
+* https://github.com/googlefonts/picosvg
+
+<br>
+
+Update the JSON file inside the `ligatures` folder to indicate if certain unicode combinations should just reuse existing glyphs. See an example here:
+
+* https://github.com/lgrahl/twemoji-colr/blob/master/extras/ligatures.json
 
 <br>
 
