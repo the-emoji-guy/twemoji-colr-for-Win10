@@ -48,7 +48,7 @@ Download and install the following:
 * Python 3.10.7
 * Perl 5.32.1
 * Node 16.17.0
-* GnuWIn32
+* GnuWin32
 * MinGW
 * FontForge 2022-03-08
 
