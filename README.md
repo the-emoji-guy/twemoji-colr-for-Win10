@@ -137,7 +137,7 @@ If everything was installed correctly, the output should be saved as `build/Twem
 
 <br>
 
-## Customizing the output
+## Customize the output
 
 Once verified that there are no issues running `make`, we can start customizing the font output. Set up a clean slate first:
 
